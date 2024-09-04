@@ -249,7 +249,7 @@
       </ReturnValue>
       <MemberValue>2</MemberValue>
       <Docs>
-        <summary>A 4-byte Boolean value (<see langword="true" /> != 0, <see langword="false" /> = 0). This is the Win32 BOOL type.</summary>
+        <summary>A 4-byte Boolean value (<see langword="true" /> != 0, <see langword="false" /> = 0). This is the Win32 BOOL type. It is also compatible with an <see langword="int" /> in C (assuming the <see href="https://en.wikipedia.org/wiki/64-bit_computing#64-bit_data_models">ILP32/LLP64/LP64 data model</see>) with Boolean semantics, where 0 is <see langword="false" /> and anything else is <see langword="true" />.</summary>
       </Docs>
     </Member>
     <Member MemberName="BStr">
